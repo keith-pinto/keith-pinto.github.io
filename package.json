@@ -1,0 +1,19 @@
+{
+  "name": "keith-pinto.github.io",
+  "version": "1.0.0",
+  "description": "A collection of my notes.",
+  "main": "index.js",
+  "scripts" : {
+    "tw": "tiddlywiki",
+    "wiki-version": "npm run tw -- --version",
+    "write": "npm run tw -- tw --listen",
+    "publish": "npm run tw -- tw --build index"
+  },
+  "repository": "https://github.com/keith-pinto/keith-pinto.github.io",
+  "author": "Keith Pinto <keithpintov@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "tiddlywiki": "^5.1.22"
+  }
+}
