@@ -1,0 +1,23 @@
+created: 20200826064107861
+modified: 20200826072022637
+tags: geometry interesting-proofs published
+title: Pythagorean Theorem - Proof by squares
+type: text/vnd.tiddlywiki
+
+$$\LARGE
+\text{height}^2 + \text{base}^2 = \text{hypotenuse}^2
+$$
+
+<div style="text-align:center" >
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/92615030@N03/50270278602/in/album-72157715639492188/" title="pt_pbs"><img src="https://live.staticflickr.com/65535/50270278602_f2d6abbf0b_o.png" width="620" height="384" alt="pt_pbs"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+</div>
+
+There are many proofs of this theorem, but the following is probably sim­pler than most. Let the legs be a and b and the hypotenuse c, and arrange four replicas of the triangle in the corners of a square of side a + b, as shown above.<br/>
+
+Then the area of the large square equals 4 times the area of the triangle plus the area of the small square; that is
+
+$$
+(a+b)^{2} = 4(\frac{1}{2}ab) + c^{2}
+$$
+
+This simplifies at once to $$a^{2} + b^{2} = c^{2}$$, which is the ''Pythagorean theorem''.
