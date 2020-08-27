@@ -1,0 +1,59 @@
+created: 20200827051742809
+modified: 20200827053501974
+tags: geometry interesting-proofs published derivatives
+title: Slope of a line tangent to a parabola
+type: text/vnd.tiddlywiki
+
+<div style="text-align:center">
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/92615030@N03/50273716996/in/dateposted-public/" title="ttp"><img src="https://live.staticflickr.com/65535/50273716996_40eea92790_o.png" width="716" height="510" alt="ttp"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+</div>
+
+Slope of the secant line PQ
+
+
+$$
+m_{sec} = slope of PQ = \frac{y_{1}-y_{0}}{x_{1}-x_{0}}
+$$
+<div style="text-align:right">(1)</div>
+
+We let $$\bold{x_{1}}$$ approach $$\bold{x_{0}}$$, so that the variable point ''Q'' ap­proaches the fixed point ''P'' by sliding along the curve-much like a bead sliding along a curved wire. As this happens, the secant changes direction and visibly approaches the tangent at P as its limiting position.
+
+$$
+m = \lim_{Q\to P} m_{sec} = \lim_{x_{1}\to x_{0}} \frac{y_{1}-y_{0}}{x_{1}-x_{0}}
+$$
+<div style="text-align:right">(2)</div>
+
+We cannot calculate the limiting value ''m'' in above mentioned equation by simply setting $$\bold{x_{1}}$$ = $$\bold{x_{0}}$$, be­cause then $$\bold{y_{1}}$$ = $$\bold{y_{0}}$$ and this would give the meaningless result
+
+$$
+m = \frac{y_{0}-y_{0}}{x_{0}-x_{0}} = \frac{0}{0}
+$$
+
+We must think of $$\bold{x_{1}}$$ as coming very close to $$\bold{x_{0}}$$ //but remaining distinct from it//. Since ''P'' and ''Q'' both lie on the parabola (whose equation is $$y = x^{2}$$), we have the following:
+
+$$
+y_{0} = x_{0}^{2}
+\\[3mm]
+y_{1} = x_{1}^{2}
+$$
+
+Now equation (1) can be written as
+
+$$
+m_{sec} = 
+\frac{y_{1}-y_{0}}{x_{1}-x_{0}} = 
+\frac{x_{1}^{2}-x_{0}^{2}}{x_{1}-x_{0}} =
+\frac{(x_{1}-x_{0})(x_{1}+x_{0})}{x_{1}-x_{0}} =
+x_{1}+x_{0}
+$$
+<div style="text-align:right">(3)</div>
+
+As $$\bold{x_{1}}$$ gets closer and closer to $$\bold{x_{0}}$$, $$\bold{x_{1}+x_{0}}$$ becomes more and more nearly equal to $$\bold{x_{0}+x_{0} \approx 2x_{0}}$$. Hence the slope of the tangent to the curve $$y = x^{2}$$ at the point $$(x_{0}, y_{0})$$ is $$\bold{2x_{0}}$$
+
+''NOTE'': This is also one of the ways to find the derivate of $$x^{2}$$, i.e.
+
+
+$$
+f'(x^{2}) = 2x 
+$$
+<div style="text-align:right">(4)</div>
