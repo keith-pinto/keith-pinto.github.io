@@ -163,6 +163,8 @@ Error message and password prompt
 
 <li>Pythagorean Theorem - Proof by squares</li>
 
+<li>Slope of a line tangent to a parabola</li>
+
 <li>Tiddler Listing</li>
 
 </ul>
@@ -9936,6 +9938,61 @@ $$
 $$
 
 This simplifies at once to $$a^{2} + b^{2} = c^{2}$$, which is the ''Pythagorean theorem''.</pre>
+</div>
+<div created="20200827051742809" modified="20200827053501974" tags="geometry interesting-proofs published derivatives" title="Slope of a line tangent to a parabola" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>&lt;div style=&quot;text-align:center&quot;&gt;
+&lt;a data-flickr-embed=&quot;true&quot; href=&quot;https://www.flickr.com/photos/92615030@N03/50273716996/in/dateposted-public/&quot; title=&quot;ttp&quot;&gt;&lt;img src=&quot;https://live.staticflickr.com/65535/50273716996_40eea92790_o.png&quot; width=&quot;716&quot; height=&quot;510&quot; alt=&quot;ttp&quot;&gt;&lt;/a&gt;&lt;script async src=&quot;//embedr.flickr.com/assets/client-code.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;/div&gt;
+
+Slope of the secant line PQ
+
+
+$$
+m_{sec} = slope of PQ = \frac{y_{1}-y_{0}}{x_{1}-x_{0}}
+$$
+&lt;div style=&quot;text-align:right&quot;&gt;(1)&lt;/div&gt;
+
+We let $$\bold{x_{1}}$$ approach $$\bold{x_{0}}$$, so that the variable point ''Q'' ap­proaches the fixed point ''P'' by sliding along the curve-much like a bead sliding along a curved wire. As this happens, the secant changes direction and visibly approaches the tangent at P as its limiting position.
+
+$$
+m = \lim_{Q\to P} m_{sec} = \lim_{x_{1}\to x_{0}} \frac{y_{1}-y_{0}}{x_{1}-x_{0}}
+$$
+&lt;div style=&quot;text-align:right&quot;&gt;(2)&lt;/div&gt;
+
+We cannot calculate the limiting value ''m'' in above mentioned equation by simply setting $$\bold{x_{1}}$$ = $$\bold{x_{0}}$$, be­cause then $$\bold{y_{1}}$$ = $$\bold{y_{0}}$$ and this would give the meaningless result
+
+$$
+m = \frac{y_{0}-y_{0}}{x_{0}-x_{0}} = \frac{0}{0}
+$$
+
+We must think of $$\bold{x_{1}}$$ as coming very close to $$\bold{x_{0}}$$ //but remaining distinct from it//. Since ''P'' and ''Q'' both lie on the parabola (whose equation is $$y = x^{2}$$), we have the following:
+
+$$
+y_{0} = x_{0}^{2}
+\\[3mm]
+y_{1} = x_{1}^{2}
+$$
+
+Now equation (1) can be written as
+
+$$
+m_{sec} = 
+\frac{y_{1}-y_{0}}{x_{1}-x_{0}} = 
+\frac{x_{1}^{2}-x_{0}^{2}}{x_{1}-x_{0}} =
+\frac{(x_{1}-x_{0})(x_{1}+x_{0})}{x_{1}-x_{0}} =
+x_{1}+x_{0}
+$$
+&lt;div style=&quot;text-align:right&quot;&gt;(3)&lt;/div&gt;
+
+As $$\bold{x_{1}}$$ gets closer and closer to $$\bold{x_{0}}$$, $$\bold{x_{1}+x_{0}}$$ becomes more and more nearly equal to $$\bold{x_{0}+x_{0} \approx 2x_{0}}$$. Hence the slope of the tangent to the curve $$y = x^{2}$$ at the point $$(x_{0}, y_{0})$$ is $$\bold{2x_{0}}$$
+
+''NOTE'': This is also one of the ways to find the derivate of $$x^{2}$$, i.e.
+
+
+$$
+f'(x^{2}) = 2x 
+$$
+&lt;div style=&quot;text-align:right&quot;&gt;(4)&lt;/div&gt;</pre>
 </div>
 <div created="20200826072307281" modified="20200826072919146" tags="" title="Tiddler Listing" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>&lt;&lt;list-links filter:&quot;[tag[published]]&quot;&gt;&gt;</pre>
