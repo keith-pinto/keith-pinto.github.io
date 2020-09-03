@@ -1,0 +1,13 @@
+created: 20200903044259821
+modified: 20200903044644029
+tags: linux note published
+title: About "Linux Processors"
+type: text/vnd.tiddlywiki
+
+In Linux, we can generalize that each processor is doing exactly one of three things at any given moment:
+
+# In user-space, executing user code in a process
+# In kernel-space, in process context, executing on behalf of a specific process
+# In kernel-space, in interrupt context, not associated with a process, handling an interrupt
+
+//Reference: Linux Kernel Development//
