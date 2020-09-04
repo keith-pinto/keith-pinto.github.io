@@ -4,10 +4,10 @@
   "description": "A collection of my notes.",
   "main": "index.js",
   "scripts" : {
-    "tw": "tiddlywiki",
-    "wiki-version": "npm run tw -- --version",
-    "write": "npm run tw -- tw --listen",
-    "publish": "npm run tw -- tw --build index"
+    "tiddly": "tiddlywiki",
+    "wiki-version": "npm run tiddly -- --version",
+    "write": "npm run tiddly -- tw --listen",
+    "publish": "npm run tiddly -- tw --build index"
   },
   "repository": "https://github.com/keith-pinto/keith-pinto.github.io",
   "author": "Keith Pinto <keithpintov@gmail.com>",
