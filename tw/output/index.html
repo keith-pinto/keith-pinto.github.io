@@ -165,6 +165,8 @@ Error message and password prompt
 
 <li>About &quot;Linux Processors&quot;</li>
 
+<li>JS does not have dynamic scope</li>
+
 <li>Pythagorean Theorem - Proof by squares</li>
 
 <li>Slope of a line tangent to a parabola</li>
@@ -9947,6 +9949,31 @@ But there is a sixth principle, perhaps most important of all: ''the conceptual 
 # In kernel-space, in interrupt context, not associated with a process, handling an interrupt
 
 //Reference: Linux Kernel Development//
+</pre>
+</div>
+<div created="20200904092553314" modified="20200904093544628" tags="js published" title="JS does not have dynamic scope" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>```js
+function foo() {
+	console.log( a ); // 3  (not 2!)
+}
+
+function bar() {
+	var a = 3;
+	foo();
+}
+
+var a = 2;
+
+bar();
+```
+
+''Lexical scope is write-time, whereas dynamic scope is runtime''. Lexical scope cares where a function was declared, but dynamic scope cares where a function was called from.
+
+
+
+JS does not, in fact, have dynamic scope. It has lexical scope. Plain and simple. But the `this` mechanism is kind of like dynamic scope.
+
+//Reference: https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/scope%20%26%20closures/apA.md//
 </pre>
 </div>
 <div created="20200826064107861" modified="20200903044613487" tags="geometry published proof" title="Pythagorean Theorem - Proof by squares" type="text/vnd.tiddlywiki" revision="0" bag="default">
