@@ -1,0 +1,26 @@
+created: 20240909030215014
+modified: 20240909031008063
+tags: 
+title: Pendulum
+type: text/vnd.tiddlywiki
+
+Period of a simple pendulum for small arcs
+
+$$
+T = 2\pi\sqrt{\frac{l}{g}}
+$$
+
+Where $$T$$ is the period, $$l$$ us the length and $$g$$ is acceleration of gravity.
+
+Other interesting facts about a pendulum
+
+<<<
+A grandfather clock's pendulum with a length of about 1 meter, for example, swings with a leisurely period of 2 seconds.
+<<<
+
+
+<<<
+Oil and mineral prospectors use very sensitive pendulums to detect slight differences in the accelerations, which is affected by the densities of underlying formations
+<<<
+
+Source: Conceptual Physics, Ch 19, Vibrations and Waves, Pg.362
