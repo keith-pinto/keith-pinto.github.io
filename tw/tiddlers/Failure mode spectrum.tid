@@ -1,0 +1,13 @@
+created: 20240918095506404
+modified: 20241014021206736
+tags: system-design
+title: Failure mode spectrum
+type: text/vnd.tiddlywiki
+
+# Byzantine
+# Temporal
+# Omission
+## Send omission failure
+## Receive omission failure
+# Crash
+# Fail-stop

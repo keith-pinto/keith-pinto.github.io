@@ -21,7 +21,7 @@ npm run write
 ```
 
 ## To publish articles
-```
+```sh
 npm run publish
 cp tw/output/index.html .
 ```

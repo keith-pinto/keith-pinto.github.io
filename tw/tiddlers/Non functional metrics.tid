@@ -1,0 +1,33 @@
+created: 20240918092322018
+modified: 20240918093251304
+tags: system-design
+title: Non functional metrics
+type: text/vnd.tiddlywiki
+
+! Availability
+
+$$
+\frac{\text{Total time - Amount of time service was done}}{\text{Total time}}
+$$
+
+! MTBF
+
+<<<
+Mean time between failure
+<<<
+
+
+$$
+\frac{\text{Total elapsed time - Sum of downtime}}{\text{Total no. of failures}}
+$$
+
+! MTTR
+
+<<<
+Mean time to recover
+<<<
+
+
+$$
+\frac{\text{Total maintenance time}}{\text{Total no. of repairs}}
+$$

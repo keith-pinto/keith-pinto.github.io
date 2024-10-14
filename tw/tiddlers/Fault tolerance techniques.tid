@@ -1,0 +1,10 @@
+created: 20240918095220406
+modified: 20240918095326619
+tags: system-design
+title: Fault tolerance techniques
+type: text/vnd.tiddlywiki
+
+# Replication
+# Checkpointing
+## Consistent State
+## Inconsistent State
