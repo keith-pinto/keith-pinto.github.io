@@ -1,0 +1,31 @@
+created: 20241111081339499
+modified: 20241111082705128
+tags: concurrency cs published
+title: Amdahl's Law
+type: text/vnd.tiddlywiki
+
+$$
+S(n) = \frac{1}{(1-P)+\frac{P}{n}}
+$$
+
+* S(n) - Speed up achieved by using n cores or threads
+* P - is the fraction of the program that can be made parallel
+
+
+''Notes:''
+
+<<<
+Utilization is defined as the speed-up divided by the number of processors.
+<<<
+
+
+<<<
+One should take the calculations using Amdahl's law with a ''grain of salt''. There are other factors such as the memory architecture, cache misses, network and disk I/O, etc, that can affect the execution time of a program. The actual speed-up might be less than the calculated one.
+<<<
+
+
+<<<
+Amdahl's law works on a problem of fixed size. However as computing resources are improved, algorithms run on larger and even larger datasets. As the dataset size grows, the parallelisable portion of the program grows faster than the serial portion and a more realistic assessment of performance is given by ''Gustafson's law''
+<<<
+
+

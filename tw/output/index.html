@@ -167,6 +167,8 @@ Error message and password prompt
 
 <li>About &quot;Linux Processors&quot;</li>
 
+<li>Amdahl's Law</li>
+
 <li>Consistency Spectrum</li>
 
 <li>Extrasomatic</li>
@@ -9970,6 +9972,34 @@ But there is a sixth principle, perhaps most important of all: ''the conceptual 
 # In kernel-space, in interrupt context, not associated with a process, handling an interrupt
 
 //Reference: Linux Kernel Development//
+</pre>
+</div>
+<div created="20241111081339499" modified="20241111082705128" tags="concurrency cs published" title="Amdahl's Law" type="text/vnd.tiddlywiki" revision="0" bag="default">
+<pre>$$
+S(n) = \frac{1}{(1-P)+\frac{P}{n}}
+$$
+
+* S(n) - Speed up achieved by using n cores or threads
+* P - is the fraction of the program that can be made parallel
+
+
+''Notes:''
+
+&lt;&lt;&lt;
+Utilization is defined as the speed-up divided by the number of processors.
+&lt;&lt;&lt;
+
+
+&lt;&lt;&lt;
+One should take the calculations using Amdahl's law with a ''grain of salt''. There are other factors such as the memory architecture, cache misses, network and disk I/O, etc, that can affect the execution time of a program. The actual speed-up might be less than the calculated one.
+&lt;&lt;&lt;
+
+
+&lt;&lt;&lt;
+Amdahl's law works on a problem of fixed size. However as computing resources are improved, algorithms run on larger and even larger datasets. As the dataset size grows, the parallelisable portion of the program grows faster than the serial portion and a more realistic assessment of performance is given by ''Gustafson's law''
+&lt;&lt;&lt;
+
+
 </pre>
 </div>
 <div created="20240918095330400" modified="20240918095500498" tags="system-design" title="Consistency Spectrum" type="text/vnd.tiddlywiki" revision="0" bag="default">
