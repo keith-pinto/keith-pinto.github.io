@@ -7,7 +7,7 @@
     "tiddly": "tiddlywiki",
     "wiki-version": "npm run tiddly -- --version",
     "write": "npm run tiddly -- tw --listen",
-    "publish": "npm run tiddly -- tw --build index"
+    "publish": "npm run tiddly -- tw --build index && cp tw/output/index.html ."
   },
   "repository": "https://github.com/keith-pinto/keith-pinto.github.io",
   "author": "Keith Pinto <keithpintov@gmail.com>",
